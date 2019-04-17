@@ -1,6 +1,8 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
     <persistence-unit name="EmployeeService" transaction-type="RESOURCE_LOCAL">
         <class>jpa2.pro.j2se.model.Employee</class>
+        <class>jpa2.pro.j2se.ormapping.model.Employee01FieldAccess</class>
+        <class>jpa2.pro.j2se.ormapping.model.Employee02PropertyAccess</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa2pro"/>
