@@ -5,7 +5,6 @@ import jpa2.pro.j2se.ormapping.service.Employee03MixedAccessService;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 public class Employee03MixedAccessTest {

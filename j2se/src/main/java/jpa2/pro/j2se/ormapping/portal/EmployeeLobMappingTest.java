@@ -13,7 +13,7 @@ public class EmployeeLobMappingTest {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("EmployeeService");
         EntityManager em = emf.createEntityManager();
 
-        File file = new File("C:\\Users\\j\\Pictures\\Saved Pictures\\icon2.jpg");
+        File file = new File("C:\\Users\\Xavier\\Pictures\\moi.jpg");
         FileInputStream in = new FileInputStream(file);
         byte[] pic = getStreamBytes(in);
         System.out.println(pic.length);
