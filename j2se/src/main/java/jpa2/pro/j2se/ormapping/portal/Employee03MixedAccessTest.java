@@ -23,6 +23,6 @@ public class Employee03MixedAccessTest {
         em.getTransaction().commit();
 
         Employee03MixedAccess emp = emas.getEmployee(2);
-        System.out.println(emp.getPhoneNumber());
+        System.out.println(emp);
     }
 }

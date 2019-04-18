@@ -44,10 +44,12 @@ public class Employee03MixedAccess {
 
     @Access(AccessType.PROPERTY) @Column(name="PHONE")
     protected String getPhoneNumberForDb() {
-        if (null != phoneNum && phoneNum.length() == 10)
+        if (null != phoneNum && phoneNum.length() == 10) {
             return phoneNum;
-        else
+        }
+        else {
             return LOCAL_AREA_CODE + phoneNum;
+        }
     }
 
     protected void setPhoneNumberForDb(String num) {
@@ -68,6 +70,6 @@ public class Employee03MixedAccess {
     }
 
     public String toString() {
-        return "Employee id: " + getId() + " name: " + getName() + " salary: " + getSalary();
+        return "Employee id: " + getId() + " name: " + getName() + " salary: " + getSalary() + " phone: " + getPhoneNumberForDb();
     }
 }
