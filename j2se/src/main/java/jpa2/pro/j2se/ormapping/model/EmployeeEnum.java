@@ -1,9 +1,8 @@
 package jpa2.pro.j2se.ormapping.model;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.sql.Date;
+import java.sql.Timestamp;
 
 @Entity
 public class EmployeeEnum {
@@ -13,6 +12,10 @@ public class EmployeeEnum {
     private EmployeeType type;
     @Enumerated(EnumType.STRING)
     private EmployeeType previousType;
+    private Date dob;
+    @Temporal(TemporalType.TIME)
+    @Column(name="S_DATE")
+    private java.util.Date startDate;
 
     public int getId() {
         return id;
@@ -55,8 +58,25 @@ public class EmployeeEnum {
         this.previousType = type;
     }
 
+    public Date getDob() {
+        return dob;
+    }
+
+    public void setDob(Date dob) {
+        this.dob = dob;
+    }
+
+    public java.util.Date getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(java.util.Date startDate) {
+        this.startDate = startDate;
+    }
+
     public String toString(){
         return "id: " + this.getId() + ", name: " + this.getName() + ", salary: "
-                + this.getSalary() + ", type: " + this.getType().ordinal() + ", Description: " + this.getType().name();
+                + this.getSalary() + ", type: " + this.getType().ordinal() + ", Description: " + this.getType().name()
+                + ", DOB: " + this.getDob() + ", Start Date: " + this.getStartDate();
     }
 }
