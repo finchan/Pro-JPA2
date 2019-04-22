@@ -7,6 +7,7 @@
         <class>jpa2.pro.j2se.ormapping.model.EmployeeCustomColumnMapping</class>
         <class>jpa2.pro.j2se.ormapping.model.EmployeeLobMapping</class>
         <class>jpa2.pro.j2se.ormapping.model.EmployeeEnum</class>
+        <class>jpa2.pro.j2se.ormapping.model.EmployeeAutoIdGeneration</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa2pro"/>
