@@ -1,0 +1,4 @@
+CREATE TABLE `jpa2pro`.`employee_id_identity_generated` (
+  `id` INT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
