@@ -1,6 +1,6 @@
-package jpa2.pro.j2se.service;
+package jpa2.pro.j2se.demo.service;
 
-import jpa2.pro.j2se.model.Employee;
+import jpa2.pro.j2se.demo.model.Employee;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;

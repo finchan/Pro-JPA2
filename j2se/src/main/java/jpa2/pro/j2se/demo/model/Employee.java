@@ -1,4 +1,4 @@
-package jpa2.pro.j2se.model;
+package jpa2.pro.j2se.demo.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
