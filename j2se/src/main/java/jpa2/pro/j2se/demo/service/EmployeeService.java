@@ -41,7 +41,7 @@ public class EmployeeService {
     }
 
     public Collection<Employee> findAllEmployees() {
-        Query query = em.createQuery("SELECT e FROM Employee e");
+        Query query = em.createQuery("SELECT e FROM Many2OneEmployee e");
         return (Collection<Employee>) query.getResultList();
     }
 }
