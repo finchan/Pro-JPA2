@@ -13,6 +13,10 @@
         <class>jpa2.pro.j2se.ormapping.model.EmployeeIDIdentityGen</class>
         <class>jpa2.pro.j2se.relationship.many2one.model.Many2OneDepartment</class>
         <class>jpa2.pro.j2se.relationship.many2one.model.Many2OneEmployee</class>
+        <class>jpa2.pro.j2se.relationship.one2oneunidirectional.model.OneToOneUnidirectionalParkingSpace</class>
+        <class>jpa2.pro.j2se.relationship.one2oneunidirectional.model.OneToOneUnidirectionalEmployee</class>
+        <class>jpa2.pro.j2se.relationship.one2onebidirectional.model.One2OneBidirectionalEmployee</class>
+        <class>jpa2.pro.j2se.relationship.one2onebidirectional.model.One2OneBidirectionalParkingSpace</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa2pro"/>
