@@ -1,9 +1,6 @@
 package jpa2.pro.j2se.relationship.onetoonepkmapping.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.PrimaryKeyJoinColumn;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="onetoonepkmapping_parking_space")
@@ -12,6 +9,7 @@ public class OneToOnePKMappingParkingSpace {
     private int id;
     private int lot;
     private String location;
+    @OneToOne
     @PrimaryKeyJoinColumn
     private  OneToOnePKMappingEmployee employee;
 
