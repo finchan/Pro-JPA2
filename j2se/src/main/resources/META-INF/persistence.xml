@@ -21,6 +21,8 @@
         <class>jpa2.pro.j2se.relationship.onetoonepkmapping.model.OneToOnePKMappingParkingSpace</class>
         <class>jpa2.pro.j2se.relationship.onetomanybidirectional.model.OneToManyBidirectionalEmployee</class>
         <class>jpa2.pro.j2se.relationship.onetomanybidirectional.model.OneToManyBidirectionalDepartment</class>
+        <class>jpa2.pro.j2se.relationship.manytomanybidirectional.model.ManyToManyBidirectionalProject</class>
+        <class>jpa2.pro.j2se.relationship.manytomanybidirectional.model.ManyToManyBidirectionalEmployee</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa2pro"/>
