@@ -12,7 +12,7 @@ public class OneToManyUnidirectionalEmployee {
     private int id;
     private String name;
     private long salary;
-    @OneToMany
+    @OneToMany (fetch = FetchType.LAZY)
     @JoinTable(name="onetomanyunidirectional_emp_phone",
             joinColumns = @JoinColumn(name="emp_id"),
             inverseJoinColumns = @JoinColumn(name="ONETOMANYUNIDIRECTIONAL_PHONE_ID"))

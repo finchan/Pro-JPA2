@@ -4,6 +4,8 @@ import jpa2.pro.j2se.relationship.onetomanyunidirectional.model.OneToManyUnidire
 import jpa2.pro.j2se.relationship.onetomanyunidirectional.model.OneToManyUnidirectionalPhone;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
+import java.util.Collection;
 
 public class OneToManyUnidirectionalService {
     protected EntityManager em;
@@ -33,5 +35,10 @@ public class OneToManyUnidirectionalService {
         OneToManyUnidirectionalEmployee emp = em.find(OneToManyUnidirectionalEmployee.class, empId);
         emp.addPhone(phone);
         return emp;
+    }
+
+    public Collection<OneToManyUnidirectionalEmployee> getAllEmployees() {
+        Query query = em.createQuery("select e from OneToManyUnidirectionalEmployee e");
+        return (Collection<OneToManyUnidirectionalEmployee>) query.getResultList();
     }
 }
