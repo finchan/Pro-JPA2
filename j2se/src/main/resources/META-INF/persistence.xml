@@ -25,6 +25,9 @@
         <class>jpa2.pro.j2se.relationship.manytomanybidirectional.model.ManyToManyBidirectionalEmployee</class>
         <class>jpa2.pro.j2se.relationship.onetomanyunidirectional.model.OneToManyUnidirectionalEmployee</class>
         <class>jpa2.pro.j2se.relationship.onetomanyunidirectional.model.OneToManyUnidirectionalPhone</class>
+        <class>jpa2.pro.j2se.relationship.embeddedobjects.model.EmbeddedObjectsEmployee</class>
+        <class>jpa2.pro.j2se.relationship.sharingembeddedobjects.model.SharingEmbeddedObjectsCompany</class>
+        <class>jpa2.pro.j2se.relationship.sharingembeddedobjects.model.SharingEmbeddedObjectsEmployee</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa2pro"/>
