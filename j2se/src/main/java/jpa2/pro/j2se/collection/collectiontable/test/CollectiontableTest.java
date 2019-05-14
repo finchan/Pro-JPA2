@@ -25,5 +25,13 @@ public class CollectiontableTest {
         em.getTransaction().begin();
         cs.updateEmployeeVacation(1, 10);
         em.getTransaction().commit();
+
+        em.getTransaction().begin();
+        cs.removeEmployeeTheFirstVacation(1);
+        em.getTransaction().commit();
+
+        em.getTransaction().begin();
+        cs.updateEmployeeTheFirstVacation(1, 5);
+        em.getTransaction().commit();
     }
 }

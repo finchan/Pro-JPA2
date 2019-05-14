@@ -10,7 +10,7 @@ import java.util.Calendar;
 public class CollectiontableEmployeeVacationbookings {
     @Temporal(TemporalType.DATE)
     private Calendar startDate;
-    @Column(name="days")
+    @Column(name="DAYS_GENERIC")
     private int daysTaken;
 
     public Calendar getStartDate() {

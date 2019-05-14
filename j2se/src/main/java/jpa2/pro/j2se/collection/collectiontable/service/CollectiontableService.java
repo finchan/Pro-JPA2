@@ -5,6 +5,7 @@ import jpa2.pro.j2se.collection.collectiontable.model.CollectiontableEmployeeVac
 
 import javax.persistence.EntityManager;
 import java.util.Calendar;
+import java.util.List;
 
 public class CollectiontableService {
     protected EntityManager em;
@@ -33,6 +34,20 @@ public class CollectiontableService {
         v.setDaysTaken(days);
         v.setStartDate(Calendar.getInstance());
         emp.getVactionBookings().add(v);
+        return emp;
+    }
+
+    public CollectiontableEmployee removeEmployeeTheFirstVacation(int id) {
+        CollectiontableEmployee emp = em.find(CollectiontableEmployee.class, id);
+        List<CollectiontableEmployeeVacationbookings> vocations = (List<CollectiontableEmployeeVacationbookings>) emp.getVactionBookings();
+        vocations.remove(0);
+        return emp;
+    }
+
+    public CollectiontableEmployee updateEmployeeTheFirstVacation(int id, int days) {
+        CollectiontableEmployee emp = em.find(CollectiontableEmployee.class, id);
+        List<CollectiontableEmployeeVacationbookings> vocations = (List<CollectiontableEmployeeVacationbookings>) emp.getVactionBookings();
+        vocations.get(0).setDaysTaken(days);
         return emp;
     }
 }

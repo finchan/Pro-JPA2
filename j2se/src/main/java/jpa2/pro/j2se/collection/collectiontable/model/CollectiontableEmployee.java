@@ -13,12 +13,19 @@ public class CollectiontableEmployee {
     private String name;
     private long salary;
 
-    //Using a targetClass instead of generics
+//    Using a targetClass instead of generics
     @ElementCollection(targetClass = CollectiontableEmployeeVacationbookings.class)
     @CollectionTable(name="collectiontable_employee_vacationbookings",
     joinColumns = @JoinColumn(name="EMPLOYEE_ID"))
-//    @AttributeOverride(name="daysTaken", column=@Column(name="DAYS"))
+    @AttributeOverride(name="daysTaken", column=@Column(name="DAYS"))
     private Collection vactionBookings;
+
+    //If you use Generics, no need to provide targetClass
+//    @ElementCollection
+//    @CollectionTable(name="collectiontable_employee_vacationbookings",
+//            joinColumns = @JoinColumn(name="EMPLOYEE_ID"))
+//    @AttributeOverride(name="daysTaken", column=@Column(name="DAYS"))
+//    private Collection <CollectiontableEmployeeVacationbookings> vactionBookings;
 
     //Using generics in place of a targetClass
     @ElementCollection
