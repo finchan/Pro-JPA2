@@ -1,21 +1,21 @@
 package jpa2.pro.j2se.collection.collectiontable.test;
 
-import jpa2.pro.j2se.collection.collectiontable.model.CollectiontableEmployee;
-import jpa2.pro.j2se.collection.collectiontable.service.CollectiontableService;
+import jpa2.pro.j2se.collection.collectiontable.model.CollectionAndSetEmployee;
+import jpa2.pro.j2se.collection.collectiontable.service.CollectionAndSetService;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class CollectiontableTest {
+public class CollectionAndSetTest {
     public static void main(String[] args) {
         EntityManagerFactory emf =
                 Persistence.createEntityManagerFactory("EmployeeService");
         EntityManager em = emf.createEntityManager();
-        CollectiontableService cs = new CollectiontableService(em);
+        CollectionAndSetService cs = new CollectionAndSetService(em);
 
         em.getTransaction().begin();
-        CollectiontableEmployee emp = cs.createEmployee("Tasche", 10000);
+        CollectionAndSetEmployee emp = cs.createEmployee("Tasche", 10000);
         em.getTransaction().commit();
 
         em.getTransaction().begin();

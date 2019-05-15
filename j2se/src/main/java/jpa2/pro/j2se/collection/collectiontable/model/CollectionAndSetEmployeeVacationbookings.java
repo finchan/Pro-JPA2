@@ -7,7 +7,7 @@ import javax.persistence.TemporalType;
 import java.util.Calendar;
 
 @Embeddable
-public class CollectiontableEmployeeVacationbookings {
+public class CollectionAndSetEmployeeVacationbookings {
     @Temporal(TemporalType.DATE)
     private Calendar startDate;
     @Column(name="DAYS_GENERIC")

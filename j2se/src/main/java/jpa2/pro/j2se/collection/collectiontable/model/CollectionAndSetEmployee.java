@@ -6,7 +6,7 @@ import java.util.Set;
 
 @Entity
 @Table (name="collectiontable_employee")
-public class CollectiontableEmployee {
+public class CollectionAndSetEmployee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -14,7 +14,7 @@ public class CollectiontableEmployee {
     private long salary;
 
 //    Using a targetClass instead of generics
-    @ElementCollection(targetClass = CollectiontableEmployeeVacationbookings.class)
+    @ElementCollection(targetClass = CollectionAndSetEmployeeVacationbookings.class)
     @CollectionTable(name="collectiontable_employee_vacationbookings",
     joinColumns = @JoinColumn(name="EMPLOYEE_ID"))
     @AttributeOverride(name="daysTaken", column=@Column(name="DAYS"))
