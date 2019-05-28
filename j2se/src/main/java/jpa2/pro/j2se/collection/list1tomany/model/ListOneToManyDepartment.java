@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Table(name="listonetomanydepartment")
 public class ListOneToManyDepartment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

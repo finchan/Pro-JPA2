@@ -3,6 +3,7 @@ package jpa2.pro.j2se.collection.list1tomany.model;
 import javax.persistence.*;
 
 @Entity
+@Table(name="listonetomanyemployee")
 public class ListOneToManyEmployee {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -11,11 +12,8 @@ public class ListOneToManyEmployee {
     private long salary;
 
     @ManyToOne
-    @JoinTable(
-            name="listonetomanydepartment",
-            joinColumns = @JoinColumn(name = "ID"),
-            inverseJoinColumns = @JoinColumn(name="LISTONETOMANYDEPARTMENT_ID")
-    )
+    @JoinColumn(table="listonetomanydepartment", name="LISTONETOMANYDEPARTMENT_ID")
+
     private ListOneToManyDepartment dept;
 
     public int getId() {
