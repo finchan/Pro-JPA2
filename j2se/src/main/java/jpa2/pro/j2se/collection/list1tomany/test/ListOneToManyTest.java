@@ -15,8 +15,8 @@ public class ListOneToManyTest {
         ListOneToManyService ls = new ListOneToManyService(em);
         em.getTransaction().begin();
 //        ls.createDepartment("IT");
-//        ls.createEmployee("Tasche", 100);
-        ls.updateEmployeeDept(1, 1);
+//        ls.createEmployee("Tatze", 200);
+        ls.updateEmployeeDept(2, 1);
         em.getTransaction().commit();
     }
 }

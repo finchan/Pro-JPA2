@@ -12,7 +12,7 @@ public class ListOneToManyEmployee {
     private long salary;
 
     @ManyToOne
-    @JoinColumn(table="listonetomanydepartment", name="LISTONETOMANYDEPARTMENT_ID")
+    @JoinColumn(name="LISTONETOMANYDEPARTMENT_ID")
 
     private ListOneToManyDepartment dept;
 

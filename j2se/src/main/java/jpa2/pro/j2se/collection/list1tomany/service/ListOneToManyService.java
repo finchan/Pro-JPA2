@@ -19,15 +19,6 @@ public class ListOneToManyService {
         return dept;
     }
 
-    public ListOneToManyDepartment addDeptEmployee(int deptid, String name, long salary) {
-        ListOneToManyDepartment dept = em.find(ListOneToManyDepartment.class, deptid);
-        ListOneToManyEmployee emp = new ListOneToManyEmployee();
-        emp.setName(name);
-        emp.setSalary(salary);
-        dept.addEmployees(emp);
-        return dept;
-    }
-
     public ListOneToManyEmployee createEmployee(String name, long salary) {
         ListOneToManyEmployee emp = new ListOneToManyEmployee();
         emp.setName(name);

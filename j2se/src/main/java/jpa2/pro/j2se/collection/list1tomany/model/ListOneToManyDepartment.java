@@ -54,7 +54,8 @@ public class ListOneToManyDepartment {
                 employees.add(employee);
             }
             if(employee != null) {
-                employee.getDept().getEmployees().remove(employee);
+                if(employee.getDept() != null)
+                    employee.getDept().getEmployees().remove(employee);
             }
             employee.setDept(this);
         }
