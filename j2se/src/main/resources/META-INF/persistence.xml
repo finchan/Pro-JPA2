@@ -31,6 +31,8 @@
         <class>jpa2.pro.j2se.collection.collectiontable.model.CollectionAndSetEmployee</class>
         <class>jpa2.pro.j2se.collection.list1tomany.model.ListOneToManyEmployee</class>
         <class>jpa2.pro.j2se.collection.list1tomany.model.ListOneToManyDepartment</class>
+        <class>jpa2.pro.j2se.collection.persistentlyorderedlist.model.PrintJob</class>
+        <class>jpa2.pro.j2se.collection.persistentlyorderedlist.model.PrintQueue</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa2pro"/>
