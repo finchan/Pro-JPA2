@@ -11,11 +11,15 @@ public class PrintTest {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("EmployeeService");
         EntityManager em = emf.createEntityManager();
         PrintService service = new PrintService(em);
+//        em.getTransaction().begin();
+//        service.createPrintQueue("Tasche");
+//        em.getTransaction().commit();
+//        em.getTransaction().begin();
+//        service.createPrintJob(3, "Tasche");
+//        em.getTransaction().commit();
+
         em.getTransaction().begin();
-        service.createPrintQueue("Tasche");
-        em.getTransaction().commit();
-        em.getTransaction().begin();
-        service.createPrintJob(1, "Tasche");
+        service.removePrintJob(1, "Tasche");
         em.getTransaction().commit();
     }
 }

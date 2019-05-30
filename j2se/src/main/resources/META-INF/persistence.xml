@@ -33,6 +33,8 @@
         <class>jpa2.pro.j2se.collection.list1tomany.model.ListOneToManyDepartment</class>
         <class>jpa2.pro.j2se.collection.persistentlyorderedlist.model.PrintJob</class>
         <class>jpa2.pro.j2se.collection.persistentlyorderedlist.model.PrintQueue</class>
+        <class>jpa2.pro.j2se.collection.elementcollectionstringmap.model.ElementCollectionStringMapEmployee</class>
+        <class>jpa2.pro.j2se.collection.elementcollectionstringmap.model.ElementCollectionStringMapDepartment</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa2pro"/>
