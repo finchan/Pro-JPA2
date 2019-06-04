@@ -37,6 +37,8 @@
         <class>jpa2.pro.j2se.collection.elementcollectionstringmap.model.ElementCollectionStringMapDepartment</class>
         <class>jpa2.pro.j2se.collection.elementcollectionenummap.model.ElementCollectionEnumMapDepartment</class>
         <class>jpa2.pro.j2se.collection.elementcollectionenummap.model.ElementCollectionEnumMapEmployee</class>
+        <class>jpa2.pro.j2se.collection.onetomanymap.model.OneToManyDepartment</class>
+        <class>jpa2.pro.j2se.collection.onetomanymap.model.OneToManyEmployee</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa2pro"/>
