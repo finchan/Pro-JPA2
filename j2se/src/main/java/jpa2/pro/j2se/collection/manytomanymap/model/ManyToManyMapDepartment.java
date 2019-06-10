@@ -13,7 +13,7 @@ public class ManyToManyMapDepartment {
     private int id;
     private String name;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name="MANYTOMANYMAP_DEPT_EMP",
             joinColumns = @JoinColumn(name = "DEPT_ID"),
