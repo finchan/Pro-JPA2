@@ -1,0 +1,4 @@
+package jpa2.pro.j2se.relationship.many2one.model;
+
+public class Employee {
+}
