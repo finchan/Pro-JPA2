@@ -45,6 +45,8 @@
         <class>jpa2.pro.j2se.collection.onetomanyentityattributekey.model.OneToManyEntityAttributeKeyEmployee</class>
         <class>jpa2.pro.j2se.collection.embeddablekeymapping.model.EmbeddableKeyMappingDepartment</class>
         <class>jpa2.pro.j2se.collection.embeddablekeymapping.model.EmbeddableKeyMappingEmployee</class>
+        <class>jpa2.pro.j2se.collection.manytomanyembeddablekeyoverride.model.ManyToManyEmbeddableKeyOverrideDepartment</class>
+        <class>jpa2.pro.j2se.collection.manytomanyembeddablekeyoverride.model.ManyToManyEmbeddableKeyOverrideEmployee</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa2pro"/>
