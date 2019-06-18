@@ -23,5 +23,7 @@ public class Test {
         em.getTransaction().begin();
         s.updateEmpDepartment("Slot-1", 1, 1);
         em.getTransaction().commit();
+        em.close();
+        emf.close();
     }
 }

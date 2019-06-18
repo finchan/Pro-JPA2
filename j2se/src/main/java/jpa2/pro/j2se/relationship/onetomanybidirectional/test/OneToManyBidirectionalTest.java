@@ -25,5 +25,7 @@ public class OneToManyBidirectionalTest {
         //3. Update Employee Dept
         os.updateEmployee(emp.getId(), dept.getId());
         em.getTransaction().commit();
+        em.close();
+        emf.close();
     }
 }

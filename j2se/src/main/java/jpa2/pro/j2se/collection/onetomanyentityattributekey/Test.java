@@ -28,5 +28,7 @@ public class Test {
 
         List<OneToManyEntityAttributeKeyDepartment> list = s.findAllDepartments();
         System.out.println(list.size());
+        em.close();
+        emf.close();
     }
 }

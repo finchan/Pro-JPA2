@@ -18,5 +18,7 @@ public class EmployeeIDIdentityGenTest {
         System.out.println(emp.getId());
         em.getTransaction().commit();
         System.out.println(emp.getId());
+        em.close();
+        emf.close();
     }
 }

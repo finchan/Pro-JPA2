@@ -16,5 +16,7 @@ public class EmployeeAutoIdGenerationTest {
         em.getTransaction().begin();
         es.addEmployee("Xavier", 100000);
         em.getTransaction().commit();
+        em.close();
+        emf.close();
     }
 }

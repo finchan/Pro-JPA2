@@ -23,5 +23,7 @@ public class Employee03MixedAccessTest {
 
         Employee03MixedAccess emp = emas.getEmployee(2);
         System.out.println(emp);
+        em.close();
+        emf.close();
     }
 }

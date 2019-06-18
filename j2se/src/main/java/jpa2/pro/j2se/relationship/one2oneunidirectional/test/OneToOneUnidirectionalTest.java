@@ -20,5 +20,7 @@ public class OneToOneUnidirectionalTest {
         //2. Create Employee
         os.createOneToOneUnidirectionalEmployee("Xavier", 100000, parkingSpace);
         em.getTransaction().commit();
+        em.close();
+        emf.close();
     }
 }

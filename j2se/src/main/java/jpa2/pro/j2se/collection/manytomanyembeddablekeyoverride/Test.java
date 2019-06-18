@@ -25,5 +25,7 @@ public class Test {
         s.updateEmployeeDeptment(1,1);
         s.updateEmployeeDeptment(2,2);
         em.getTransaction().commit();
+        em.close();
+        emf.close();
     }
 }

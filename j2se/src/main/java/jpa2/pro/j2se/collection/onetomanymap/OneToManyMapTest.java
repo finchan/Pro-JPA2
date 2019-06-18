@@ -26,5 +26,7 @@ public class OneToManyMapTest {
         os.updateEmployeeDepartment(1,1,"Slot-1");
         os.updateEmployeeDepartment(2,2, "Slot-2");
         em.getTransaction().commit();
+        em.close();
+        emf.close();
     }
 }

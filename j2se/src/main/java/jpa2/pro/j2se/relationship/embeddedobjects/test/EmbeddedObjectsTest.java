@@ -33,5 +33,7 @@ public class EmbeddedObjectsTest {
         EmbeddedObjectsEmployee emp3 = em.find(EmbeddedObjectsEmployee.class, 1);
         em.remove(emp3);
         em.getTransaction().commit();
+        em.close();
+        emf.close();
     }
 }

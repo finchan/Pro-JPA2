@@ -23,5 +23,7 @@ public class One2OneBidirectionalTest {
         One2OneBidirectionalParkingSpace parking = os.findOneToOneBidirectionalParkingSpace(1);
         em.getTransaction().commit();
         System.out.println(parking);
+        em.close();
+        emf.close();
     }
 }

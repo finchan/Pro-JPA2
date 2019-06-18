@@ -35,5 +35,7 @@ public class OneToManyUnidirectionalTest {
                 System.out.println(emp.getName()+"\t" + phone.getNum());
             }
         }
+        em.close();
+        emf.close();
     }
 }

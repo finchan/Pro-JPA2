@@ -33,5 +33,8 @@ public class CollectionAndSetTest {
         em.getTransaction().begin();
         cs.updateEmployeeTheFirstVacation(1, 5);
         em.getTransaction().commit();
+
+        em.close();
+        emf.close();
     }
 }

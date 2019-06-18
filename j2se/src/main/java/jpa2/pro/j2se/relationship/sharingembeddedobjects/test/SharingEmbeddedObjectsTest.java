@@ -15,5 +15,7 @@ public class SharingEmbeddedObjectsTest {
         os.createCompany("Dalian", "Liaoning", "DLDZ", "116600",1);
         os.createEmployee("Dalian", "LiaoNing", "DLDZ", "116600", 1, "Tasche", 10000);
         em.getTransaction().commit();
+        em.close();
+        emf.close();
     }
 }

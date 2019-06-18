@@ -19,5 +19,7 @@ public class EmployeeIDTableGenTest {
 
         EmployeeIDTableGen emp = es.getEmployee(10001);
         System.out.println(emp);
+        em.close();
+        emf.close();
     }
 }

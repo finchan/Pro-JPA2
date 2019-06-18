@@ -18,5 +18,7 @@ public class ListOneToManyTest {
 //        ls.createEmployee("Tatze", 200);
         ls.updateEmployeeDept(2, 1);
         em.getTransaction().commit();
+        em.close();
+        emf.close();
     }
 }

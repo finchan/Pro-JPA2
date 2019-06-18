@@ -32,6 +32,7 @@ public class ElementCollectionStringMapTest {
 //        es.updateEmployeeDepartment(4,2);
         es.updateEmployeeDepartment(1,2);
         em.getTransaction().commit();
-
+        em.close();
+        emf.close();
     }
 }

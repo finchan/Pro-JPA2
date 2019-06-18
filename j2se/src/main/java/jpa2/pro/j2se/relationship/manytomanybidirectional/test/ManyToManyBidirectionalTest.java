@@ -25,5 +25,7 @@ public class ManyToManyBidirectionalTest {
         em.getTransaction().begin();
         ms.createEmployeeProject(1, 1);
         em.getTransaction().commit();
+        em.close();
+        emf.close();
     }
 }

@@ -21,5 +21,7 @@ public class EmployeeTransientMappingTest {
 
         EmployeeTransientMapping emp = es.getEmployee(1);
         logger.debug(emp.toString());
+        em.close();
+        emf.close();
     }
 }

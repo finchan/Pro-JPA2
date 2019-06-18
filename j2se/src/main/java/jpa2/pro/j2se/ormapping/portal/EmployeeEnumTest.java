@@ -23,5 +23,7 @@ public class EmployeeEnumTest {
         em.getTransaction().commit();
         EmployeeEnum emp = es.getEmployee(2);
         logger.debug(emp.toString());
+        em.close();
+        emf.close();
     }
 }

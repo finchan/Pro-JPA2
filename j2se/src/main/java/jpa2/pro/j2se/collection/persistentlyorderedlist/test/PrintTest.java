@@ -21,5 +21,7 @@ public class PrintTest {
         em.getTransaction().begin();
         service.removePrintJob(1, "Tasche");
         em.getTransaction().commit();
+        em.close();
+        emf.close();
     }
 }

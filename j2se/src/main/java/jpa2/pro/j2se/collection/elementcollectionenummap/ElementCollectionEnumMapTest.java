@@ -31,6 +31,7 @@ public class ElementCollectionEnumMapTest {
         em.getTransaction().begin();
         es.removePhoneNumber(2, PhoneType.Home);
         em.getTransaction().commit();
-
+        em.close();
+        emf.close();
     }
 }

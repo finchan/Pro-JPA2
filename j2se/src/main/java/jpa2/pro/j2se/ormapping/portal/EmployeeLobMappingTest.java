@@ -21,6 +21,8 @@ public class EmployeeLobMappingTest {
         EmployeeLobMappingService ems = new EmployeeLobMappingService(em);
         ems.addEmployee(1, "Xavier", 100000, pic);
         em.getTransaction().commit();
+        em.close();
+        emf.close();
     }
 
     public static byte[] getStreamBytes(InputStream is) throws Exception {

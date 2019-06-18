@@ -17,5 +17,7 @@ public class OneToOnePKMappingTest {
         OneToOnePKMappingEmployee emp = os.createEmployee(1, "Tasche", 10000);
         OneToOnePKMappingParkingSpace parkingSpace = os.createParkingSpace(emp, 100, "Dalian");
         em.getTransaction().commit();
+        em.close();
+        emf.close();
     }
 }

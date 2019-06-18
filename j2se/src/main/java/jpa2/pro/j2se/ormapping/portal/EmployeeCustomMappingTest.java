@@ -23,5 +23,7 @@ public class EmployeeCustomMappingTest {
         EmployeeCustomColumnMapping emp = ems.getEmployee(1);
         System.out.println(emp);
         logger.debug(emp.toString());
+        em.close();
+        emf.close();
     }
 }
