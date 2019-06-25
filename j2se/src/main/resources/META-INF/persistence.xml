@@ -52,6 +52,9 @@
         <class>jpa2.pro.j2se.entitymanager.resourcelocaltxse.model.User</class>
         <class>jpa2.pro.j2se.entitymanager.persistingwithrelationshipscascade.model.PersistingWithRelationshipsCascadeEmployee</class>
         <class>jpa2.pro.j2se.entitymanager.persistingwithrelationshipscascade.model.PersistingWithRelationshipsCascadeAddress</class>
+        <class>jpa2.pro.j2se.entitymanager.removingwithrelationshipscascade.model.RemovingWithRelationshipsCascadePhone</class>
+        <class>jpa2.pro.j2se.entitymanager.removingwithrelationshipscascade.model.RemovingWithRelationshipsCascadeParkingSpace</class>
+        <class>jpa2.pro.j2se.entitymanager.removingwithrelationshipscascade.model.RemovingWithRelationshipsCascadeEmployee</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa2pro"/>
