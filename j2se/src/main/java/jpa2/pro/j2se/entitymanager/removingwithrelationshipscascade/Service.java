@@ -17,7 +17,21 @@ public class Service {
         RemovingWithRelationshipsCascadeEmployee emp = new RemovingWithRelationshipsCascadeEmployee();
         RemovingWithRelationshipsCascadeParkingSpace parkingSpace = new RemovingWithRelationshipsCascadeParkingSpace();
         RemovingWithRelationshipsCascadePhone phone = new RemovingWithRelationshipsCascadePhone();
-        parkingSpace.setLot("LOT-1");
+        parkingSpace.setId(1);
+        parkingSpace.setLot(0);
         parkingSpace.setLocation("DALIAN");
+        phone.setId(1);
+        phone.setNumber("111");
+        phone.setType("Telecom");
+        emp.setId(1);
+        emp.setName("Tasche");
+        emp.setParkingSpace(parkingSpace);
+        emp.getPhones().add(phone);
+        em.persist(emp);
+    }
+
+    public void removeEmployee(){
+        RemovingWithRelationshipsCascadeEmployee emp = em.find(RemovingWithRelationshipsCascadeEmployee.class, 1);
+        em.remove(emp);
     }
 }

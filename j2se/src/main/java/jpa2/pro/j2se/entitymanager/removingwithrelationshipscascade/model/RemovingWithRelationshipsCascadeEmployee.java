@@ -1,6 +1,7 @@
 package jpa2.pro.j2se.entitymanager.removingwithrelationshipscascade.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Collection;
 
 @Entity
@@ -10,14 +11,16 @@ public class RemovingWithRelationshipsCascadeEmployee {
     private int id;
     private String name;
 
+    public RemovingWithRelationshipsCascadeEmployee() {
+        this.phones = new ArrayList<RemovingWithRelationshipsCascadePhone>();
+    }
+
     @OneToOne(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
     @JoinColumn(name="PSPACE_ID")
     private RemovingWithRelationshipsCascadeParkingSpace parkingSpace;
 
     @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
-    @JoinTable(name="REMOVINGWITHRELATIONSHIPSCASCADE_PHONE",
-    joinColumns = @JoinColumn(name="ID"),
-    inverseJoinColumns = @JoinColumn(name="EMPLOYEE_ID"))
+    @JoinColumn(table="REMOVINGWITHRELATIONSHIPSCASCADE_PHONE", name="EMPLOYEE_ID")
     private Collection<RemovingWithRelationshipsCascadePhone> phones;
 
     public int getId() {

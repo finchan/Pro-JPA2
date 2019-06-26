@@ -9,7 +9,7 @@ import javax.persistence.Table;
 public class RemovingWithRelationshipsCascadeParkingSpace {
     @Id
     private int id;
-    private String lot;
+    private int lot;
     private String location;
 
     public int getId() {
@@ -20,11 +20,11 @@ public class RemovingWithRelationshipsCascadeParkingSpace {
         this.id = id;
     }
 
-    public String getLot() {
+    public int getLot() {
         return lot;
     }
 
-    public void setLot(String lot) {
+    public void setLot(int lot) {
         this.lot = lot;
     }
 
